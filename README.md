@@ -119,11 +119,3 @@ const API_URL = 'http://localhost:3000';
 ```
 
 ---
-
-## Build para produção
-
-```bash
-npm run build
-```
-
-Os arquivos otimizados são gerados na pasta `dist/`.
