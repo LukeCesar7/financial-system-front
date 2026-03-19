@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* =========================================
+   MODO CLARO (LIGHT MODE)
+   ========================================= */
+:root[data-mantine-color-scheme="light"] body {
+  background-color: #F0F2F5 !important; /* Fundo Cinza Gelo */
+  color: #1a1b1e !important;
+}
+
+:root[data-mantine-color-scheme="light"] .mantine-Paper-root,
+:root[data-mantine-color-scheme="light"] .mantine-Card-root {
+  background-color: #FFFFFF !important; /* Card Branco Puro */
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+  color: #1a1b1e !important;
+}
+
+/* =========================================
+   MODO ESCURO (DARK MODE)
+   ========================================= */
+:root[data-mantine-color-scheme="dark"] body {
+  background-color: #101113 !important; /* Fundo Preto Profundo */
+  color: #c1c2c5 !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-Paper-root,
+:root[data-mantine-color-scheme="dark"] .mantine-Card-root {
+  background-color: #1A1B1E !important; /* Card Cinza Escuro */
+  border: 1px solid #2C2E33 !important;
+  color: #c1c2c5 !important;
+  box-shadow: none !important;
+}
+
+/* Transição suave ao trocar de tema */
+body {
+  margin: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
